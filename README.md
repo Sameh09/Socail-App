@@ -9,7 +9,7 @@ please follow the following commands :-
    
 </ol>
 <hr>
-Then you can login with these credentials :- <br>
-E-Mail  : email@example.com
+<h3>Then you can login with these credentials :- </h3><br>
+E-Mail  : email@example.com <br>
 Password: 12345678
 </p>
