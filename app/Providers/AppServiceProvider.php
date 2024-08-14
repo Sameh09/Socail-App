@@ -27,10 +27,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $top_users = Cache::remember('top_users', now()->addMinutes(1), function () {
-            return User::withCount('ideas')->orderBy('ideas_count', 'DESC')->limit(5)->get();
-        });
-        View::share('top_users',$top_users);
+        
         Paginator::useBootstrapFive();
     }
 }

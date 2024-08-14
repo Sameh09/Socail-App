@@ -27,8 +27,8 @@ class AuthController extends Controller
             'email' => $validated['email'],
             'password' => Hash::make($validated['password']),
         ]);
-
-        Mail::to($user->email)->send(new WelcomeEmail($user));
+        //you can uncomment that after config your smtp in env file :)
+        //Mail::to($user->email)->send(new WelcomeEmail($user));
 
         return redirect()->route('dashboard')->with('success', 'Account Created Successfully');
     }
