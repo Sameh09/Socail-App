@@ -19,7 +19,7 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 Route::get('lang/{lang}', function ($lang) {
     app()->setLocale($lang);
     session()->put('locale', $lang);
-    return redirect()->route('dashboard');
+    return redirect()->back();
 })->name('lang');
 
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
