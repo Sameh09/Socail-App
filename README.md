@@ -2,12 +2,12 @@
 <p>In order to create admin account <br>
 please follow the following commands :-
 <hr>
-<ul>
-    <ol>php artisan tinker</ol>
-    <ol>use App\models\User;</ol>
-    <ol>$user = User::create(['name'=>'admin','email'=>'email@example.com','is_admin'=>'1','password'=>Hash::make('12345678')]);</ol>
+<ol>
+    <li>php artisan tinker</li>
+    <li>use App\models\User;</li>
+    <li>$user = User::create(['name'=>'admin','email'=>'email@example.com','is_admin'=>'1','password'=>Hash::make('12345678')]);</li>
    
-</ul>
+</ol>
 <hr>
 Then you can login with these credentials :- <br>
 E-Mail  : email@example.com
