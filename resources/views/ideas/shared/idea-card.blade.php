@@ -41,7 +41,7 @@
                 </div>
             </form>
         @else
-            <p class="fs-6 fw-light text-muted">
+            <p class="fs-6 fw-bold" >
                 {{ $idea->content }}
             </p>
         @endif
