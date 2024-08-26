@@ -1,6 +1,6 @@
 @php 
 use App\models\User;
-$topUsers = cache()->remember('topUsers', now()->addMinutes(5), function () {
+$topUsers = cache()->remember('topUsers', now()->addMinutes(1), function () {
             return User::withCount('ideas')
                 ->orderBy('ideas_count', 'DESC')
                 ->take(10)->get();
